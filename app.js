@@ -3,7 +3,9 @@ const app = express();
 const port = 3000;
 
 app.use(express.static("public"));
-//app.use(express.static(__dirname + "/public/css/style.css "))
+
+
+
 
 app.get("/home", (req, res) => {
   res.sendFile(__dirname + "/views/home.html");
